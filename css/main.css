@@ -1,0 +1,42 @@
+/* reset */ 
+
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* gradiente */
+
+.caja{
+    width: 150px;
+    height: 150px;
+    background-image: linear-gradient(to bottom, red, yellow);
+    transition: 2s;
+}
+
+.caja:hover{
+    margin: 50px;
+    transform: scale(1.2);
+    box-shadow: 3px 3px black;
+}
+
+.latir{
+    width: 60%;
+
+    animation-name: latir;
+    animation-iteration-count: infinite;
+    animation-duration: 20s;
+    animation-timing-function: linear;
+}
+
+@keyframes latir{
+  from{
+      transform: rotate(0);
+  }
+
+  to{
+      transform: rotate(360deg);
+  }
+
+}
